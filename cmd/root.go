@@ -11,7 +11,7 @@ import (
 var configFile string
 
 var rootCmd = &cobra.Command{
-	Use: "twitzin",
+	Use:   "twitzin",
 	Short: "This is the CLI App to retrieve Twitter followers, following, and related for a particular account.",
 	Long: `This CLI App can be used to retrieve Twitter followers, following, and other information from a particular
 		Twitter account by passing in that particular twitter account.
@@ -35,7 +35,7 @@ func init() {
 }
 
 func initConfig() {
-	configFile = "twitzin.yaml"
+	configFile = "config.yaml"
 	viper.SetConfigType("yaml")
 	viper.SetConfigFile(configFile)
 
